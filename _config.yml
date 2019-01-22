@@ -111,7 +111,7 @@ author:
   bio              : "명지대학교(서울) 멋쟁이 사자처럼"
   location         : "Seoul,Korea"
   email            : ""
-  uri              : "https://www.facebook.com/멋쟁이사자처럼-at-명지대학교-서울-273562306651581/?eid=ARCU-wpLNWDcknRi1_JzTho88f_yP-Pq2VUWB8n6cjKXNjI16Amsr2hCB-z2wzEf3tBaqcJonsRWm9Sf" # 웹사이트, 보통 지금 블로그 말고 링크해두고 싶은 사이트를 적는다.
+  uri              : "" # 웹사이트, 보통 지금 블로그 말고 링크해두고 싶은 사이트를 적는다.
   # 이 아래 쇼셜 리스트에 해당되는 것에 아이디를 적는다
 
   links:
