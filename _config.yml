@@ -19,7 +19,7 @@ locale                   : "ko" # 타깃 국가 설정
 title                    : "MJU(Seoul) x Likelion" # 블로그 좌측상단의 제목
 title_separator          : "-"
 name                     : "MJU(Seoul) x Likelion"
-description              : "명지대학교(서울) 멋쟁이 사자처럼 페이지"
+description              : "명지대학교(서울) 멋쟁이 사자처럼"
 url                      : "https://likelionmyongji.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "https://github.com/likelionmyongji/likelionmyongji.github.io" # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "likelionmyongji"
   avatar           : "/assets/images/bio-photo.jpg" # 프로필 사진
-  bio              : "명지대학교(서울) 멋쟁이 사자처럼 페이지"
+  bio              : "명지대학교(서울) 멋쟁이 사자처럼"
   location         : "Seoul,Korea"
   email            : ""
   uri              : "https://www.facebook.com/멋쟁이사자처럼-at-명지대학교-서울-273562306651581/?eid=ARCU-wpLNWDcknRi1_JzTho88f_yP-Pq2VUWB8n6cjKXNjI16Amsr2hCB-z2wzEf3tBaqcJonsRWm9Sf" # 웹사이트, 보통 지금 블로그 말고 링크해두고 싶은 사이트를 적는다.
