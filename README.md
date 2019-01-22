@@ -1,6 +1,8 @@
 명지대학교(서울) x Likelion 7th 홈페이지
 ========================================
 
+![Version](https://img.shields.io/badge/Version-1.1.1-green.svg)
+
 ### 1. INFO
 
 ---
