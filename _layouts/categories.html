@@ -52,7 +52,7 @@ layout: archive
   display: none;
   z-index: 999;
   }
-  
+
 </style>
 
 <!-- Top Scroll Btn -->
@@ -60,13 +60,13 @@ layout: archive
 <script>
   $(function() {
       $(window).scroll(function() {
-          if ($(this).scrollTop() > 500) {
+          if ($(this).scrollTop() > 200) {
               $('#MOVE_TOP_BTN').fadeIn();
           } else {
               $('#MOVE_TOP_BTN').fadeOut();
           }
       });
-    
+
       $("#MOVE_TOP_BTN").click(function() {
           $('html, body').animate({
               scrollTop : 0
