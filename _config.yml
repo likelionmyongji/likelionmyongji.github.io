@@ -124,7 +124,7 @@ author:
       # url: "https://twitter.com/"
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/멋쟁이사자처럼-at-명지대학교-서울-273562306651581/?eid=ARCU-wpLNWDcknRi1_JzTho88f_yP-Pq2VUWB8n6cjKXNjI16Amsr2hCB-z2wzEf3tBaqcJonsRWm9Sf"
+      url: "https://www.facebook.com/likelionMJU/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/likelionmyongji"  # 주소 전체를 적는 것이 아닌 자신의 정보만 적는다.
@@ -140,7 +140,7 @@ footer:
       # url:
     - label: "Facebook"
       icon: "fab fa-fw fa-facebook-square"
-      url: "https://facebook.com/멋쟁이사자처럼-at-명지대학교-서울-273562306651581/?eid=ARCU-wpLNWDcknRi1_JzTho88f_yP-Pq2VUWB8n6cjKXNjI16Amsr2hCB-z2wzEf3tBaqcJonsRWm9Sf"
+      url: "https://www.facebook.com/likelionMJU/"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/likelionmyongji"
