@@ -7,3 +7,39 @@ layout: archive
 <div class="entries-{{ page.entries_layout | default: 'list' }}">
   {% include posts-tag.html taxonomy=page.taxonomy type=page.entries_layout %}
 </div>
+
+<!-- jquery 참조 -->
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+<!-- Top Scroll Btn Style -->
+<style>
+  a#MOVE_TOP_BTN {
+  position: fixed;
+  right: 2%;
+  bottom: 50px;
+  display: none;
+  z-index: 999;
+  }
+  
+</style>
+
+<!-- Top Scroll Btn -->
+<a id="MOVE_TOP_BTN" href="#"><img color="grey" src='/assets/images/Top_Scroll_Btn.png' width="55" height = "55"></a>
+<script>
+  $(function() {
+      $(window).scroll(function() {
+          if ($(this).scrollTop() > 500) {
+              $('#MOVE_TOP_BTN').fadeIn();
+          } else {
+              $('#MOVE_TOP_BTN').fadeOut();
+          }
+      });
+    
+      $("#MOVE_TOP_BTN").click(function() {
+          $('html, body').animate({
+              scrollTop : 0
+          }, 400);
+          return false;
+      });
+  });
+</script>
