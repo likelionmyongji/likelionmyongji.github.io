@@ -9,7 +9,7 @@
 
 명지대학교(서울) 멋쟁이 사자처럼 7기 홍보 및 활동을 위한 홈페이지
 
-[DEMO] [http://mjuseoul.likelion.org](http://mjuseoul.likelion.org)
+[DEMO] [https://likelionmyongji.github.io](https://likelionmyongji.github.io)
 
 ### 2. 주제
 
