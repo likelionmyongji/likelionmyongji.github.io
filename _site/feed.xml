@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-08T19:06:48+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MJU(Seoul) x Likelion</title><subtitle>명지대학교(서울) 멋쟁이 사자처럼</subtitle><author><name>likelionmyongji</name></author><entry><title type="html">자바스크립트 입문 제 5강</title><link href="http://localhost:4000/javascript/js_lecture5/" rel="alternate" type="text/html" title="자바스크립트 입문 제 5강" /><published>2019-07-08T00:00:00+09:00</published><updated>2019-07-08T18:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture5</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture5/">&lt;h2 id=&quot;함수&quot;&gt;함수&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-11T19:53:46+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MJU(Seoul) x Likelion</title><subtitle>명지대학교(서울) 멋쟁이 사자처럼</subtitle><author><name>likelionMJU</name></author><entry><title type="html">자바스크립트 입문 제 5강</title><link href="http://localhost:4000/javascript/js_lecture5/" rel="alternate" type="text/html" title="자바스크립트 입문 제 5강" /><published>2019-07-08T00:00:00+09:00</published><updated>2019-07-08T18:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture5</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture5/">&lt;h2 id=&quot;함수&quot;&gt;함수&lt;/h2&gt;
 
 &lt;p&gt;함수는 JavaScript 뿐 만 아니라 대부분의 프로그래밍 언어에서 핵심입니다. 함수는 학교 수학시간에 배웠던 것처럼 y = f(x)의 형태라고 생각하시면 될 것 같습니다.&lt;/p&gt;
 
@@ -66,7 +66,7 @@
 
 &lt;p&gt;이번 교안의 내용은 여기까지입니다.&lt;/p&gt;
 
-&lt;p&gt;다음 교안에서는 JavaScript의 객체에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionmyongji</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">함수</summary></entry><entry><title type="html">자바스크립트 입문 제 4강</title><link href="http://localhost:4000/javascript/js_lecture4/" rel="alternate" type="text/html" title="자바스크립트 입문 제 4강" /><published>2019-07-05T00:00:00+09:00</published><updated>2019-07-05T07:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture4</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture4/">&lt;h2 id=&quot;조건문&quot;&gt;조건문&lt;/h2&gt;
+&lt;p&gt;다음 교안에서는 JavaScript의 객체에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">함수</summary></entry><entry><title type="html">자바스크립트 입문 제 4강</title><link href="http://localhost:4000/javascript/js_lecture4/" rel="alternate" type="text/html" title="자바스크립트 입문 제 4강" /><published>2019-07-05T00:00:00+09:00</published><updated>2019-07-05T07:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture4</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture4/">&lt;h2 id=&quot;조건문&quot;&gt;조건문&lt;/h2&gt;
 
 &lt;p&gt;조건문을 사용하면 특정 조건이 만족됐을 때 코드를 실행할 수 있습니다.&lt;/p&gt;
 
@@ -180,13 +180,13 @@
 
 &lt;p&gt;이번 교안의 내용은 여기까지입니다.&lt;/p&gt;
 
-&lt;p&gt;다음 교안에서는 JavaScript의 함수에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionmyongji</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">조건문</summary></entry><entry><title type="html">자바스크립트 입문 제 0강</title><link href="http://localhost:4000/javascript/js_lecture0/" rel="alternate" type="text/html" title="자바스크립트 입문 제 0강" /><published>2019-07-03T00:00:00+09:00</published><updated>2019-07-03T15:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture0</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture0/">&lt;h2 id=&quot;자바스크립트란&quot;&gt;자바스크립트란?&lt;/h2&gt;
+&lt;p&gt;다음 교안에서는 JavaScript의 함수에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">조건문</summary></entry><entry><title type="html">자바스크립트 입문 제 0강</title><link href="http://localhost:4000/javascript/js_lecture0/" rel="alternate" type="text/html" title="자바스크립트 입문 제 0강" /><published>2019-07-03T00:00:00+09:00</published><updated>2019-07-03T15:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture0</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture0/">&lt;h2 id=&quot;자바스크립트란&quot;&gt;자바스크립트란?&lt;/h2&gt;
 
 &lt;p&gt;JavaScripts는 웹 브라우저에서 사용하기 위해 만들어진 프로그래밍 언어입니다. 이 언어는 웹 브라우저 상에서 나타나는 UI(사용자 인터페이스)를 동적으로 보여주기 위해 사용됩니다. 최근에는 브라우저 뿐만 아니라 Node.js 런타임을 통해 서버 쪽에서도 사용되고 있습니다.&lt;/p&gt;
 
 &lt;p&gt;또한,  NW.js, Electron 등을 통해 데스크탑 앱을 만들 수도 있고, react-native, NativeScript 등으로 모바일 앱도 만들 수 있습니다.&lt;/p&gt;
 
-&lt;p&gt;JavaScript는 매년마다 새로운 문법들이 나오며 나날히 발전해 가고 있습니다. 명지대학교(서울) 멋쟁이사자처럼에서는 2학기 교육과정으로 React가 결졍됨에 따라 여름 방학 동안 7기 아기사자들이 쉽게 JavaScript를 이해할 수 있도록 교안을 정리해 올려보고자 합니다.&lt;/p&gt;</content><author><name>likelionmyongji</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">자바스크립트란?</summary></entry><entry><title type="html">자바스크립트 입문 제 1강</title><link href="http://localhost:4000/javascript/js_lecture1/" rel="alternate" type="text/html" title="자바스크립트 입문 제 1강" /><published>2019-07-03T00:00:00+09:00</published><updated>2019-07-03T15:01:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture1</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture1/">&lt;h2 id=&quot;hello-javascript&quot;&gt;Hello JavaScript!&lt;/h2&gt;
+&lt;p&gt;JavaScript는 매년마다 새로운 문법들이 나오며 나날히 발전해 가고 있습니다. 명지대학교(서울) 멋쟁이사자처럼에서는 2학기 교육과정으로 React가 결졍됨에 따라 여름 방학 동안 7기 아기사자들이 쉽게 JavaScript를 이해할 수 있도록 교안을 정리해 올려보고자 합니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">자바스크립트란?</summary></entry><entry><title type="html">자바스크립트 입문 제 1강</title><link href="http://localhost:4000/javascript/js_lecture1/" rel="alternate" type="text/html" title="자바스크립트 입문 제 1강" /><published>2019-07-03T00:00:00+09:00</published><updated>2019-07-03T15:01:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture1</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture1/">&lt;h2 id=&quot;hello-javascript&quot;&gt;Hello JavaScript!&lt;/h2&gt;
 
 &lt;p&gt;자바스크립트는 브라우저에서 언제든지 사용해 볼 수 있습니다. 만약 크롬브라우저가 아닌 다른 브라우저를 사용중이라면 크롬을 설치하여 실행해보세요. 그리고 개발자 도구를 열어보세요.&lt;/p&gt;
 
@@ -230,7 +230,7 @@
 
 &lt;p&gt;이번 교안의 내용은 여기까지입니다.&lt;/p&gt;
 
-&lt;p&gt;다음 교안에서는 JavaScript의 변수와 상수에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionmyongji</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">Hello JavaScript!</summary></entry><entry><title type="html">자바스크립트 입문 제 2강</title><link href="http://localhost:4000/javascript/js_lecture2/" rel="alternate" type="text/html" title="자바스크립트 입문 제 2강" /><published>2019-07-03T00:00:00+09:00</published><updated>2019-07-03T17:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture2</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture2/">&lt;h2 id=&quot;변수와-상수&quot;&gt;변수와 상수&lt;/h2&gt;
+&lt;p&gt;다음 교안에서는 JavaScript의 변수와 상수에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">Hello JavaScript!</summary></entry><entry><title type="html">자바스크립트 입문 제 2강</title><link href="http://localhost:4000/javascript/js_lecture2/" rel="alternate" type="text/html" title="자바스크립트 입문 제 2강" /><published>2019-07-03T00:00:00+09:00</published><updated>2019-07-03T17:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture2</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture2/">&lt;h2 id=&quot;변수와-상수&quot;&gt;변수와 상수&lt;/h2&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;이번 교안부터 &lt;a href=&quot;https://codesandbox.io/s/vanilla&quot;&gt;CodeSandBox&lt;/a&gt;에서 진행하겠습니다.
@@ -365,7 +365,7 @@
 
 &lt;p&gt;이번 교안의 내용은 여기까지입니다.&lt;/p&gt;
 
-&lt;p&gt;다음 교안에서는 JavaScript의 연산자에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionmyongji</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">변수와 상수</summary></entry><entry><title type="html">자바스크립트 입문 제 3강</title><link href="http://localhost:4000/javascript/js_lecture3/" rel="alternate" type="text/html" title="자바스크립트 입문 제 3강" /><published>2019-07-03T00:00:00+09:00</published><updated>2019-07-03T20:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture3</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture3/">&lt;h2 id=&quot;연산자&quot;&gt;연산자&lt;/h2&gt;
+&lt;p&gt;다음 교안에서는 JavaScript의 연산자에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">변수와 상수</summary></entry><entry><title type="html">자바스크립트 입문 제 3강</title><link href="http://localhost:4000/javascript/js_lecture3/" rel="alternate" type="text/html" title="자바스크립트 입문 제 3강" /><published>2019-07-03T00:00:00+09:00</published><updated>2019-07-03T20:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture3</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture3/">&lt;h2 id=&quot;연산자&quot;&gt;연산자&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;연산자&lt;/strong&gt;는 프로그래밍 언어에서 특정 연산을 하도록 하는 문자입니다.&lt;/p&gt;
 
@@ -584,4 +584,4 @@
 
 &lt;p&gt;이번 교안의 내용은 여기까지입니다.&lt;/p&gt;
 
-&lt;p&gt;다음 교안에서는 JavaScript의 조건문에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionmyongji</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">연산자</summary></entry></feed>
+&lt;p&gt;다음 교안에서는 JavaScript의 조건문에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">연산자</summary></entry></feed>
