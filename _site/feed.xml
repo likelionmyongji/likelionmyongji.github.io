@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-13T17:33:17+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MJU(Seoul) x Likelion</title><subtitle>명지대학교(서울) 멋쟁이 사자처럼</subtitle><author><name>likelionMJU</name></author><entry><title type="html">자바스크립트 입문 제 6강</title><link href="http://localhost:4000/javascript/js_lecture6/" rel="alternate" type="text/html" title="자바스크립트 입문 제 6강" /><published>2019-07-13T00:00:00+09:00</published><updated>2019-07-13T12:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture6</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture6/">&lt;h2 id=&quot;객체&quot;&gt;객체&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-14T00:14:52+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MJU(Seoul) x Likelion</title><subtitle>명지대학교(서울) 멋쟁이 사자처럼</subtitle><author><name>likelionMJU</name></author><entry><title type="html">자바스크립트 입문 제 6강</title><link href="http://localhost:4000/javascript/js_lecture6/" rel="alternate" type="text/html" title="자바스크립트 입문 제 6강" /><published>2019-07-13T00:00:00+09:00</published><updated>2019-07-13T12:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture6</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture6/">&lt;h2 id=&quot;객체&quot;&gt;객체&lt;/h2&gt;
 
 &lt;p&gt;객체는 변수나 상수를 사용할 때에 하나의 이름에 대해 여러 종류의 값을 넣을 수 있게 해줍니다.&lt;/p&gt;
 
@@ -95,7 +95,7 @@
 
 &lt;h3 id=&quot;객체-내부-함수&quot;&gt;객체 내부 함수&lt;/h3&gt;
 
-&lt;p&gt;아래와 같이 객체 내부에 함수를 넣을 수도 있습니다. 함수를 선언 할 때에는 이름이 없어도 됩니다.(객체 안에 함수를 넣을 때, 화살표 함수로 선언한다면 제대로 작동하지 않습니다.)&lt;/p&gt;
+&lt;p&gt;아래와 같이 객체 내부에 함수를 넣을 수도 있습니다. 함수를 선언 할 때에는 이름이 없어도 됩니다.(주의: 객체 안에 함수를 넣을 때, 화살표 함수로 선언한다면 제대로 작동하지 않습니다)&lt;/p&gt;
 
 &lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;jeonghun&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'반정훈'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;
