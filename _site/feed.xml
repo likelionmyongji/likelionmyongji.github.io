@@ -1,4 +1,55 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-14T00:14:52+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MJU(Seoul) x Likelion</title><subtitle>명지대학교(서울) 멋쟁이 사자처럼</subtitle><author><name>likelionMJU</name></author><entry><title type="html">자바스크립트 입문 제 6강</title><link href="http://localhost:4000/javascript/js_lecture6/" rel="alternate" type="text/html" title="자바스크립트 입문 제 6강" /><published>2019-07-13T00:00:00+09:00</published><updated>2019-07-13T12:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture6</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture6/">&lt;h2 id=&quot;객체&quot;&gt;객체&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-14T22:30:56+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MJU(Seoul) x Likelion</title><subtitle>명지대학교(서울) 멋쟁이 사자처럼</subtitle><author><name>likelionMJU</name></author><entry><title type="html">자바스크립트 입문 제 7강</title><link href="http://localhost:4000/javascript/js_lecture7/" rel="alternate" type="text/html" title="자바스크립트 입문 제 7강" /><published>2019-07-14T00:00:00+09:00</published><updated>2019-07-14T21:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture7</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture7/">&lt;h2 id=&quot;배열&quot;&gt;배열&lt;/h2&gt;
+
+&lt;p&gt;배열은 JavaScript 객체의 특별한 형태입니다. 배열은 단일 데이터가 아닌 다수의 데이터를 저장할 수 있고, 연관성이 있는 데이터를 같이 저장하므로 저장한 데이터를 찾는데 용이합니다.&lt;/p&gt;
+
+&lt;p&gt;예를 들어서 문자열 배열을 선언해봅시다.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;staff&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'김혜현'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'황낙주'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'반정훈'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'한종우'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;배열을 선언할 때에는 위처럼 &lt;code class=&quot;highlighter-rouge&quot;&gt;[ ]&lt;/code&gt; 문자로 감싸주면 됩니다.&lt;/p&gt;
+
+&lt;p&gt;아래와 같이 객체 배열도 만들 수 있습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;staffs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'김혜현'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'황낙주'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'반정훈'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'한종우'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}];&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;배열을 선언한 후, n번째 항목을 조회하려면 아래와 같이 하면 됩니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;staffs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;n&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;staffs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// Object {name: '김혜현'}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;배열-항목-추가&quot;&gt;배열 항목 추가&lt;/h3&gt;
+
+&lt;p&gt;배열에 새 항목을 추가하려면 배열의 내장 함수 &lt;code class=&quot;highlighter-rouge&quot;&gt;push&lt;/code&gt; 함수룰 사용하면 됩니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;staffs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'김혜현'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'황낙주'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'반정훈'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'한종우'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}];&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;staffs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;push&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;({&lt;/span&gt;
+    &lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'누구일까요?'&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;})&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;배열-크기-알아내기&quot;&gt;배열 크기 알아내기&lt;/h3&gt;
+
+&lt;p&gt;배열의 크기를 알고 싶을 때에는 배열의 &lt;code class=&quot;highlighter-rouge&quot;&gt;length&lt;/code&gt; 값을 확인하면 됩니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;staffs&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'김혜현'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'황낙주'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'반정훈'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;},&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;na&quot;&gt;name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'한종우'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;}];&lt;/span&gt;
+
+&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;staffs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 4&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;이번 교안의 내용은 여기까지입니다.&lt;/p&gt;
+
+&lt;p&gt;다음 교안에서는 JavaScript의 배열에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">배열</summary></entry><entry><title type="html">자바스크립트 입문 제 6강</title><link href="http://localhost:4000/javascript/js_lecture6/" rel="alternate" type="text/html" title="자바스크립트 입문 제 6강" /><published>2019-07-13T00:00:00+09:00</published><updated>2019-07-13T12:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture6</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture6/">&lt;h2 id=&quot;객체&quot;&gt;객체&lt;/h2&gt;
 
 &lt;p&gt;객체는 변수나 상수를 사용할 때에 하나의 이름에 대해 여러 종류의 값을 넣을 수 있게 해줍니다.&lt;/p&gt;
 
@@ -296,13 +347,7 @@
 
 &lt;p&gt;이번 교안의 내용은 여기까지입니다.&lt;/p&gt;
 
-&lt;p&gt;다음 교안에서는 JavaScript의 함수에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">조건문</summary></entry><entry><title type="html">자바스크립트 입문 제 0강</title><link href="http://localhost:4000/javascript/js_lecture0/" rel="alternate" type="text/html" title="자바스크립트 입문 제 0강" /><published>2019-07-03T00:00:00+09:00</published><updated>2019-07-03T15:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture0</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture0/">&lt;h2 id=&quot;자바스크립트란&quot;&gt;자바스크립트란?&lt;/h2&gt;
-
-&lt;p&gt;JavaScripts는 웹 브라우저에서 사용하기 위해 만들어진 프로그래밍 언어입니다. 이 언어는 웹 브라우저 상에서 나타나는 UI(사용자 인터페이스)를 동적으로 보여주기 위해 사용됩니다. 최근에는 브라우저 뿐만 아니라 Node.js 런타임을 통해 서버 쪽에서도 사용되고 있습니다.&lt;/p&gt;
-
-&lt;p&gt;또한,  NW.js, Electron 등을 통해 데스크탑 앱을 만들 수도 있고, react-native, NativeScript 등으로 모바일 앱도 만들 수 있습니다.&lt;/p&gt;
-
-&lt;p&gt;JavaScript는 매년마다 새로운 문법들이 나오며 나날히 발전해 가고 있습니다. 명지대학교(서울) 멋쟁이사자처럼에서는 2학기 교육과정으로 React가 결졍됨에 따라 여름 방학 동안 7기 아기사자들이 쉽게 JavaScript를 이해할 수 있도록 교안을 정리해 올려보고자 합니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">자바스크립트란?</summary></entry><entry><title type="html">자바스크립트 입문 제 1강</title><link href="http://localhost:4000/javascript/js_lecture1/" rel="alternate" type="text/html" title="자바스크립트 입문 제 1강" /><published>2019-07-03T00:00:00+09:00</published><updated>2019-07-03T15:01:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture1</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture1/">&lt;h2 id=&quot;hello-javascript&quot;&gt;Hello JavaScript!&lt;/h2&gt;
+&lt;p&gt;다음 교안에서는 JavaScript의 함수에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">조건문</summary></entry><entry><title type="html">자바스크립트 입문 제 1강</title><link href="http://localhost:4000/javascript/js_lecture1/" rel="alternate" type="text/html" title="자바스크립트 입문 제 1강" /><published>2019-07-03T00:00:00+09:00</published><updated>2019-07-03T15:01:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture1</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture1/">&lt;h2 id=&quot;hello-javascript&quot;&gt;Hello JavaScript!&lt;/h2&gt;
 
 &lt;p&gt;자바스크립트는 브라우저에서 언제든지 사용해 볼 수 있습니다. 만약 크롬브라우저가 아닌 다른 브라우저를 사용중이라면 크롬을 설치하여 실행해보세요. 그리고 개발자 도구를 열어보세요.&lt;/p&gt;
 
@@ -700,4 +745,10 @@
 
 &lt;p&gt;이번 교안의 내용은 여기까지입니다.&lt;/p&gt;
 
-&lt;p&gt;다음 교안에서는 JavaScript의 조건문에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">연산자</summary></entry></feed>
+&lt;p&gt;다음 교안에서는 JavaScript의 조건문에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">연산자</summary></entry><entry><title type="html">자바스크립트 입문 제 0강</title><link href="http://localhost:4000/javascript/js_lecture0/" rel="alternate" type="text/html" title="자바스크립트 입문 제 0강" /><published>2019-07-03T00:00:00+09:00</published><updated>2019-07-03T15:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture0</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture0/">&lt;h2 id=&quot;자바스크립트란&quot;&gt;자바스크립트란?&lt;/h2&gt;
+
+&lt;p&gt;JavaScripts는 웹 브라우저에서 사용하기 위해 만들어진 프로그래밍 언어입니다. 이 언어는 웹 브라우저 상에서 나타나는 UI(사용자 인터페이스)를 동적으로 보여주기 위해 사용됩니다. 최근에는 브라우저 뿐만 아니라 Node.js 런타임을 통해 서버 쪽에서도 사용되고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;또한,  NW.js, Electron 등을 통해 데스크탑 앱을 만들 수도 있고, react-native, NativeScript 등으로 모바일 앱도 만들 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;JavaScript는 매년마다 새로운 문법들이 나오며 나날히 발전해 가고 있습니다. 명지대학교(서울) 멋쟁이사자처럼에서는 2학기 교육과정으로 React가 결졍됨에 따라 여름 방학 동안 7기 아기사자들이 쉽게 JavaScript를 이해할 수 있도록 교안을 정리해 올려보고자 합니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">자바스크립트란?</summary></entry></feed>
