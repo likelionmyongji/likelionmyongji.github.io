@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-14T22:47:36+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MJU(Seoul) x Likelion</title><subtitle>명지대학교(서울) 멋쟁이 사자처럼</subtitle><author><name>likelionMJU</name></author><entry><title type="html">자바스크립트 입문 제 7강</title><link href="http://localhost:4000/javascript/js_lecture7/" rel="alternate" type="text/html" title="자바스크립트 입문 제 7강" /><published>2019-07-14T00:00:00+09:00</published><updated>2019-07-14T22:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture7</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture7/">&lt;h2 id=&quot;배열&quot;&gt;배열&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-07-14T23:48:41+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MJU(Seoul) x Likelion</title><subtitle>명지대학교(서울) 멋쟁이 사자처럼</subtitle><author><name>likelionMJU</name></author><entry><title type="html">자바스크립트 입문 제 7강</title><link href="http://localhost:4000/javascript/js_lecture7/" rel="alternate" type="text/html" title="자바스크립트 입문 제 7강" /><published>2019-07-14T00:00:00+09:00</published><updated>2019-07-14T22:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture7</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture7/">&lt;h2 id=&quot;배열&quot;&gt;배열&lt;/h2&gt;
 
 &lt;p&gt;배열은 JavaScript 객체의 특별한 형태입니다. 배열은 단일 데이터가 아닌 다수의 데이터를 저장할 수 있고, 연관성이 있는 데이터를 같이 저장하므로 저장한 데이터를 찾는데 용이합니다.&lt;/p&gt;
 
@@ -51,7 +51,89 @@
 
 &lt;p&gt;이번 교안의 내용은 여기까지입니다.&lt;/p&gt;
 
-&lt;p&gt;다음 교안에서는 JavaScript의 반복문에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">배열</summary></entry><entry><title type="html">자바스크립트 입문 제 6강</title><link href="http://localhost:4000/javascript/js_lecture6/" rel="alternate" type="text/html" title="자바스크립트 입문 제 6강" /><published>2019-07-13T00:00:00+09:00</published><updated>2019-07-13T12:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture6</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture6/">&lt;h2 id=&quot;객체&quot;&gt;객체&lt;/h2&gt;
+&lt;p&gt;다음 교안에서는 JavaScript의 반복문에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">배열</summary></entry><entry><title type="html">자바스크립트 입문 제 8강</title><link href="http://localhost:4000/javascript/js_lecture8/" rel="alternate" type="text/html" title="자바스크립트 입문 제 8강" /><published>2019-07-14T00:00:00+09:00</published><updated>2019-07-14T23:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture8</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture8/">&lt;h2 id=&quot;반복문&quot;&gt;반복문&lt;/h2&gt;
+
+&lt;p&gt;특정 작업을 반복하려할 때, 우리는 반복문을 사용할 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;반복문의 종류는 아래와 같습니다.&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;for문&lt;/li&gt;
+    &lt;li&gt;while문&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;for&quot;&gt;for&lt;/h3&gt;
+
+&lt;p&gt;for문은 아래와 같은 구조로 이루어져 있습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;cm&quot;&gt;/* 초기 구문; 조건 구문; 변화 구문; */&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;c1&quot;&gt;// 코드&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;for문으로 0 부터 9까지의 정수를 출력해봅시다.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;for 문을 사용 할 때 보통 &lt;code class=&quot;highlighter-rouge&quot;&gt;i++&lt;/code&gt; 를 해서 1씩 증감하는 형태로 사용합니다. &lt;code class=&quot;highlighter-rouge&quot;&gt;i--&lt;/code&gt;을 통해 1씩 빼는 형태도 가능합니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;배열과-for&quot;&gt;배열과 for&lt;/h3&gt;
+
+&lt;p&gt;배열의 여러 기능 중에서 &lt;code class=&quot;highlighter-rouge&quot;&gt;length&lt;/code&gt; 값을 통해 for문에서 배열을 활용할 수도 있습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;const&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;staff&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'김혜현'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'황낙주'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'반정훈'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;s1&quot;&gt;'한종우'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;];&lt;/span&gt;
+
+&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;staffs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;length&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;staffs&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]);&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;while&quot;&gt;while&lt;/h3&gt;
+
+&lt;p&gt;while문은 특정 조건이 참이라면 계속해서 반복하는 반복문입니다. for 문은 특정 숫자를 가지고 숫자의 값을 비교하고, 증감해주면서 반복을 한다면, while문은 조건을 확인만 하면서 반복을 합니다.&lt;/p&gt;
+
+&lt;p&gt;위에서 0 부터 9까지 출력하는 반복문을 while문을 통해 작성해보겠습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;while&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;break--continue&quot;&gt;break &amp;amp; continue&lt;/h3&gt;
+
+&lt;p&gt;반복문 안에서는 &lt;code class=&quot;highlighter-rouge&quot;&gt;break&lt;/code&gt; 와 &lt;code class=&quot;highlighter-rouge&quot;&gt;continue&lt;/code&gt;를 통하여 반복문에서 벗어나거나, 그 다음 루프를 돌게끔 할 수 있습니다.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;kd&quot;&gt;let&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;++&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;continue&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 다음 루프를 실행&lt;/span&gt;
+  &lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;===&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;break&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;// 반복문을 끝내기&lt;/span&gt;
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;i 가 4 일땐 continue 를 하여 원래 console.log 를 해야 하지만 그 코드를 수행하지 않고 바로 다음 루프인 5로 넘어갑니다.&lt;/p&gt;
+
+&lt;p&gt;i 가 7 일땐 break 를하여 반복문을 종료시킵니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;이번 교안의 내용은 여기까지입니다.&lt;/p&gt;
+
+&lt;p&gt;다음 교안에서는 JavaScript의 에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">반복문</summary></entry><entry><title type="html">자바스크립트 입문 제 6강</title><link href="http://localhost:4000/javascript/js_lecture6/" rel="alternate" type="text/html" title="자바스크립트 입문 제 6강" /><published>2019-07-13T00:00:00+09:00</published><updated>2019-07-13T12:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture6</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture6/">&lt;h2 id=&quot;객체&quot;&gt;객체&lt;/h2&gt;
 
 &lt;p&gt;객체는 변수나 상수를 사용할 때에 하나의 이름에 대해 여러 종류의 값을 넣을 수 있게 해줍니다.&lt;/p&gt;
 
@@ -274,7 +356,7 @@
 
 &lt;p&gt;if문의 기본 구조는 아래와 같습니다.&lt;/p&gt;
 
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;c1&quot;&gt;// 조건식) {&lt;/span&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;if&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;cm&quot;&gt;/* 조건식 */&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;c1&quot;&gt;// 만족하면 실행되는 코드;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -349,51 +431,7 @@
 
 &lt;p&gt;이번 교안의 내용은 여기까지입니다.&lt;/p&gt;
 
-&lt;p&gt;다음 교안에서는 JavaScript의 함수에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">조건문</summary></entry><entry><title type="html">자바스크립트 입문 제 1강</title><link href="http://localhost:4000/javascript/js_lecture1/" rel="alternate" type="text/html" title="자바스크립트 입문 제 1강" /><published>2019-07-03T00:00:00+09:00</published><updated>2019-07-03T15:01:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture1</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture1/">&lt;h2 id=&quot;hello-javascript&quot;&gt;Hello JavaScript!&lt;/h2&gt;
-
-&lt;p&gt;자바스크립트는 브라우저에서 언제든지 사용해 볼 수 있습니다. 만약 크롬브라우저가 아닌 다른 브라우저를 사용중이라면 크롬을 설치하여 실행해보세요. 그리고 개발자 도구를 열어보세요.&lt;/p&gt;
-
-&lt;p&gt;개발자 도구는&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;ul&gt;
-    &lt;li&gt;윈도우 Ctrl + Shift + I&lt;/li&gt;
-    &lt;li&gt;macOS Command + Option + I&lt;/li&gt;
-  &lt;/ul&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;키를 눌러서 열 수 있습니다.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;탭에서 Console을 선택하고 다음 코드를 입력창에 입력해보세요.&lt;/p&gt;
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'HelloLion!'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;&lt;img src=&quot;/assets/images/lecture1/console.png&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
-
-&lt;p&gt;여기서 &lt;code class=&quot;highlighter-rouge&quot;&gt;console.log&lt;/code&gt;는 Console에 특정 내용을 출력하는 명령입니다.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;다음으로 아래의 코드를 입력해볼까요?&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;p&gt;Console에 3이 출력됨에 따라 우리는 JavaScript로 연산을 할 수 있다는 것을 알 수 있습니다.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;이제, 여러분이 원하는 내용을 한번 출력해보세요.&lt;/p&gt;
-
-&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'명지대학교(서울) 멋쟁이사자처럼 7기 화이팅'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;이번 교안의 내용은 여기까지입니다.&lt;/p&gt;
-
-&lt;p&gt;다음 교안에서는 JavaScript의 변수와 상수에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">Hello JavaScript!</summary></entry><entry><title type="html">자바스크립트 입문 제 2강</title><link href="http://localhost:4000/javascript/js_lecture2/" rel="alternate" type="text/html" title="자바스크립트 입문 제 2강" /><published>2019-07-03T00:00:00+09:00</published><updated>2019-07-03T17:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture2</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture2/">&lt;h2 id=&quot;변수와-상수&quot;&gt;변수와 상수&lt;/h2&gt;
+&lt;p&gt;다음 교안에서는 JavaScript의 함수에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">조건문</summary></entry><entry><title type="html">자바스크립트 입문 제 2강</title><link href="http://localhost:4000/javascript/js_lecture2/" rel="alternate" type="text/html" title="자바스크립트 입문 제 2강" /><published>2019-07-03T00:00:00+09:00</published><updated>2019-07-03T17:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture2</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture2/">&lt;h2 id=&quot;변수와-상수&quot;&gt;변수와 상수&lt;/h2&gt;
 
 &lt;blockquote&gt;
   &lt;p&gt;이번 교안부터 &lt;a href=&quot;https://codesandbox.io/s/vanilla&quot;&gt;CodeSandBox&lt;/a&gt;에서 진행하겠습니다.
@@ -528,7 +566,57 @@
 
 &lt;p&gt;이번 교안의 내용은 여기까지입니다.&lt;/p&gt;
 
-&lt;p&gt;다음 교안에서는 JavaScript의 연산자에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">변수와 상수</summary></entry><entry><title type="html">자바스크립트 입문 제 3강</title><link href="http://localhost:4000/javascript/js_lecture3/" rel="alternate" type="text/html" title="자바스크립트 입문 제 3강" /><published>2019-07-03T00:00:00+09:00</published><updated>2019-07-03T20:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture3</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture3/">&lt;h2 id=&quot;연산자&quot;&gt;연산자&lt;/h2&gt;
+&lt;p&gt;다음 교안에서는 JavaScript의 연산자에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">변수와 상수</summary></entry><entry><title type="html">자바스크립트 입문 제 1강</title><link href="http://localhost:4000/javascript/js_lecture1/" rel="alternate" type="text/html" title="자바스크립트 입문 제 1강" /><published>2019-07-03T00:00:00+09:00</published><updated>2019-07-03T15:01:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture1</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture1/">&lt;h2 id=&quot;hello-javascript&quot;&gt;Hello JavaScript!&lt;/h2&gt;
+
+&lt;p&gt;자바스크립트는 브라우저에서 언제든지 사용해 볼 수 있습니다. 만약 크롬브라우저가 아닌 다른 브라우저를 사용중이라면 크롬을 설치하여 실행해보세요. 그리고 개발자 도구를 열어보세요.&lt;/p&gt;
+
+&lt;p&gt;개발자 도구는&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;ul&gt;
+    &lt;li&gt;윈도우 Ctrl + Shift + I&lt;/li&gt;
+    &lt;li&gt;macOS Command + Option + I&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;키를 눌러서 열 수 있습니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;탭에서 Console을 선택하고 다음 코드를 입력창에 입력해보세요.&lt;/p&gt;
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'HelloLion!'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/images/lecture1/console.png&quot; width=&quot;100%&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;여기서 &lt;code class=&quot;highlighter-rouge&quot;&gt;console.log&lt;/code&gt;는 Console에 특정 내용을 출력하는 명령입니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;다음으로 아래의 코드를 입력해볼까요?&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Console에 3이 출력됨에 따라 우리는 JavaScript로 연산을 할 수 있다는 것을 알 수 있습니다.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;이제, 여러분이 원하는 내용을 한번 출력해보세요.&lt;/p&gt;
+
+&lt;div class=&quot;language-javascript highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;nx&quot;&gt;console&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nx&quot;&gt;log&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'명지대학교(서울) 멋쟁이사자처럼 7기 화이팅'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;);&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;이번 교안의 내용은 여기까지입니다.&lt;/p&gt;
+
+&lt;p&gt;다음 교안에서는 JavaScript의 변수와 상수에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">Hello JavaScript!</summary></entry><entry><title type="html">자바스크립트 입문 제 0강</title><link href="http://localhost:4000/javascript/js_lecture0/" rel="alternate" type="text/html" title="자바스크립트 입문 제 0강" /><published>2019-07-03T00:00:00+09:00</published><updated>2019-07-03T15:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture0</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture0/">&lt;h2 id=&quot;자바스크립트란&quot;&gt;자바스크립트란?&lt;/h2&gt;
+
+&lt;p&gt;JavaScripts는 웹 브라우저에서 사용하기 위해 만들어진 프로그래밍 언어입니다. 이 언어는 웹 브라우저 상에서 나타나는 UI(사용자 인터페이스)를 동적으로 보여주기 위해 사용됩니다. 최근에는 브라우저 뿐만 아니라 Node.js 런타임을 통해 서버 쪽에서도 사용되고 있습니다.&lt;/p&gt;
+
+&lt;p&gt;또한,  NW.js, Electron 등을 통해 데스크탑 앱을 만들 수도 있고, react-native, NativeScript 등으로 모바일 앱도 만들 수 있습니다.&lt;/p&gt;
+
+&lt;p&gt;JavaScript는 매년마다 새로운 문법들이 나오며 나날히 발전해 가고 있습니다. 명지대학교(서울) 멋쟁이사자처럼에서는 2학기 교육과정으로 React가 결졍됨에 따라 여름 방학 동안 7기 아기사자들이 쉽게 JavaScript를 이해할 수 있도록 교안을 정리해 올려보고자 합니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">자바스크립트란?</summary></entry><entry><title type="html">자바스크립트 입문 제 3강</title><link href="http://localhost:4000/javascript/js_lecture3/" rel="alternate" type="text/html" title="자바스크립트 입문 제 3강" /><published>2019-07-03T00:00:00+09:00</published><updated>2019-07-03T20:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture3</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture3/">&lt;h2 id=&quot;연산자&quot;&gt;연산자&lt;/h2&gt;
 
 &lt;p&gt;&lt;strong&gt;연산자&lt;/strong&gt;는 프로그래밍 언어에서 특정 연산을 하도록 하는 문자입니다.&lt;/p&gt;
 
@@ -747,10 +835,4 @@
 
 &lt;p&gt;이번 교안의 내용은 여기까지입니다.&lt;/p&gt;
 
-&lt;p&gt;다음 교안에서는 JavaScript의 조건문에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">연산자</summary></entry><entry><title type="html">자바스크립트 입문 제 0강</title><link href="http://localhost:4000/javascript/js_lecture0/" rel="alternate" type="text/html" title="자바스크립트 입문 제 0강" /><published>2019-07-03T00:00:00+09:00</published><updated>2019-07-03T15:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture0</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture0/">&lt;h2 id=&quot;자바스크립트란&quot;&gt;자바스크립트란?&lt;/h2&gt;
-
-&lt;p&gt;JavaScripts는 웹 브라우저에서 사용하기 위해 만들어진 프로그래밍 언어입니다. 이 언어는 웹 브라우저 상에서 나타나는 UI(사용자 인터페이스)를 동적으로 보여주기 위해 사용됩니다. 최근에는 브라우저 뿐만 아니라 Node.js 런타임을 통해 서버 쪽에서도 사용되고 있습니다.&lt;/p&gt;
-
-&lt;p&gt;또한,  NW.js, Electron 등을 통해 데스크탑 앱을 만들 수도 있고, react-native, NativeScript 등으로 모바일 앱도 만들 수 있습니다.&lt;/p&gt;
-
-&lt;p&gt;JavaScript는 매년마다 새로운 문법들이 나오며 나날히 발전해 가고 있습니다. 명지대학교(서울) 멋쟁이사자처럼에서는 2학기 교육과정으로 React가 결졍됨에 따라 여름 방학 동안 7기 아기사자들이 쉽게 JavaScript를 이해할 수 있도록 교안을 정리해 올려보고자 합니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">자바스크립트란?</summary></entry></feed>
+&lt;p&gt;다음 교안에서는 JavaScript의 조건문에 대해 알아보겠습니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><category term="lecture" /><summary type="html">연산자</summary></entry></feed>

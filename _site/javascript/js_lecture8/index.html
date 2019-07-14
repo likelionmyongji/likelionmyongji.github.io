@@ -9,40 +9,40 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>자바스크립트 입문 제 4강 - MJU(Seoul) x Likelion</title>
-<meta name="description" content="조건문">
+<!-- begin _includes/seo.html --><title>자바스크립트 입문 제 8강 - MJU(Seoul) x Likelion</title>
+<meta name="description" content="반복문">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="MJU(Seoul) x Likelion">
-<meta property="og:title" content="자바스크립트 입문 제 4강">
-<meta property="og:url" content="http://localhost:4000/javascript/js_lecture4/">
+<meta property="og:title" content="자바스크립트 입문 제 8강">
+<meta property="og:url" content="http://localhost:4000/javascript/js_lecture8/">
 
 
-  <meta property="og:description" content="조건문">
-
-
-
+  <meta property="og:description" content="반복문">
 
 
 
 
-  <meta property="article:published_time" content="2019-07-05T00:00:00+09:00">
 
 
 
-  <meta property="article:modified_time" content="2019-07-05T07:00:00+09:00">
+  <meta property="article:published_time" content="2019-07-14T00:00:00+09:00">
 
 
 
-  
+  <meta property="article:modified_time" content="2019-07-14T23:00:00+09:00">
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/javascript/js_lecture4/">
+
+<link rel="canonical" href="http://localhost:4000/javascript/js_lecture8/">
 
 
 
@@ -278,136 +278,104 @@
 
   <div class="archive-post">
     <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-  <meta itemprop="headline" content="자바스크립트 입문 제 4강">
-  <meta itemprop="description" content="조건문">
-  <meta itemprop="datePublished" content="July 05, 2019">
-  <meta itemprop="dateModified" content="July 05, 2019">
+  <meta itemprop="headline" content="자바스크립트 입문 제 8강">
+  <meta itemprop="description" content="반복문">
+  <meta itemprop="datePublished" content="July 14, 2019">
+  <meta itemprop="dateModified" content="July 14, 2019">
 
   <div class="page__inner-wrap">
     
       <header>
-        <h1 id="page-title" class="page__title" itemprop="headline">자바스크립트 입문 제 4강
+        <h1 id="page-title" class="page__title" itemprop="headline">자바스크립트 입문 제 8강
 </h1>
         
       </header>
     
 
     <section class="page__content" itemprop="text">
-      <h2 id="조건문">조건문</h2>
+      <h2 id="반복문">반복문</h2>
 
-<p>조건문을 사용하면 특정 조건이 만족됐을 때 코드를 실행할 수 있습니다.</p>
+<p>특정 작업을 반복하려할 때, 우리는 반복문을 사용할 수 있습니다.</p>
 
-<p>조건문의 종류는 아래와 같습니다.</p>
+<p>반복문의 종류는 아래와 같습니다.</p>
 
 <blockquote>
   <ul>
-    <li>if문</li>
-    <li>switch/case문</li>
+    <li>for문</li>
+    <li>while문</li>
   </ul>
 </blockquote>
 
 <hr />
 
-<h3 id="if문">if문</h3>
+<h3 id="for">for</h3>
 
-<p>if문은 괄호의 조건식이 만족하면 코드를 실행합니다.</p>
+<p>for문은 아래와 같은 구조로 이루어져 있습니다.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">lion</span> <span class="o">=</span> <span class="mi">7</span><span class="p">;</span>
-<span class="k">if</span><span class="p">(</span><span class="nx">lion</span> <span class="o">===</span> <span class="mi">7</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'멋쟁이사자처럼 7기'</span><span class="p">);</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="cm">/* 초기 구문; 조건 구문; 변화 구문; */</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// 코드</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>결과는 ‘멋쟁이사자처럼 7기’가 Console에 출력됩니다.</p>
+<p>for문으로 0 부터 9까지의 정수를 출력해봅시다.</p>
 
-<p>만약 lion의 값이 7이 아닌 다른 값이면 결과가 어떻게 나올까요?</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">lion</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>
-<span class="k">if</span><span class="p">(</span><span class="nx">lion</span> <span class="o">===</span> <span class="mi">7</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'멋쟁이사자처럼 7기'</span><span class="p">);</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>결과를 확인해보셨나요? 아무것도 출력되지 않습니다.</p>
+<p>for 문을 사용 할 때 보통 <code class="highlighter-rouge">i++</code> 를 해서 1씩 증감하는 형태로 사용합니다. <code class="highlighter-rouge">i--</code>을 통해 1씩 빼는 형태도 가능합니다.</p>
 
-<p>if문의 기본 구조는 아래와 같습니다.</p>
+<hr />
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">if</span><span class="p">(</span><span class="cm">/* 조건식 */</span><span class="p">)</span> <span class="p">{</span>
-    <span class="c1">// 만족하면 실행되는 코드;</span>
+<h3 id="배열과-for">배열과 for</h3>
+
+<p>배열의 여러 기능 중에서 <code class="highlighter-rouge">length</code> 값을 통해 for문에서 배열을 활용할 수도 있습니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">staff</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'김혜현'</span><span class="p">,</span> <span class="s1">'황낙주'</span><span class="p">,</span> <span class="s1">'반정훈'</span><span class="p">,</span> <span class="s1">'한종우'</span><span class="p">];</span>
+
+<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">staffs</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">staffs</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>조건식을 만족하면 실행되는 코드가 중괄호 <code class="highlighter-rouge">{}</code>로 감싸져 있는데, 이를 코드블럭이라고 합니다.</p>
+<hr />
 
-<p>만약 조건식의 결과가 true이면 코드 블럭 내의 코드가 실행되고, false면 실행되지 않습니다.</p>
+<h3 id="while">while</h3>
 
-<h3 id="if-else문">if-else문</h3>
+<p>while문은 특정 조건이 참이라면 계속해서 반복하는 반복문입니다. for 문은 특정 숫자를 가지고 숫자의 값을 비교하고, 증감해주면서 반복을 한다면, while문은 조건을 확인만 하면서 반복을 합니다.</p>
 
-<p>만약 특정 조건이 만족할 때와 만족하지 않을 때에 서로 다른 코드를 실행해야 한다면 어떻게 해야 할까요?
-바로 if-else문을 사용하면 됩니다.</p>
+<p>위에서 0 부터 9까지 출력하는 반복문을 while문을 통해 작성해보겠습니다.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">lion</span> <span class="o">=</span> <span class="mi">6</span><span class="p">;</span>
-<span class="k">if</span><span class="p">(</span><span class="nx">lion</span> <span class="o">===</span> <span class="mi">7</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'멋쟁이사자처럼 7기'</span><span class="p">);</span>
-<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'7기가 아니시군요!'</span><span class="p">);</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="k">while</span> <span class="p">(</span><span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+  <span class="nx">i</span><span class="o">++</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
-<p>위의 코드의 결과는 Console에 ‘7기가 아니시군요!’라고 출력이 됩니다.</p>
+<hr />
 
-<h3 id="if-else-if문">if-else if문</h3>
+<h3 id="break--continue">break &amp; continue</h3>
 
-<p>여러 조건에서 여러 작업을 수행하려면 if-else if문을 사용합니다.</p>
+<p>반복문 안에서는 <code class="highlighter-rouge">break</code> 와 <code class="highlighter-rouge">continue</code>를 통하여 반복문에서 벗어나거나, 그 다음 루프를 돌게끔 할 수 있습니다.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">lion</span> <span class="o">=</span> <span class="mi">5</span><span class="p">;</span>
-<span class="k">if</span><span class="p">(</span><span class="nx">lion</span> <span class="o">===</span> <span class="mi">7</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'멋쟁이사자처럼 7기'</span><span class="p">);</span>
-<span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">lion</span> <span class="o">===</span> <span class="mi">6</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'멋쟁이사자처럼 6기'</span><span class="p">);</span>
-<span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">(</span><span class="nx">lion</span> <span class="o">===</span> <span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'멋쟁이사자처럼 5기'</span><span class="p">);</span>
-<span class="p">}</span> <span class="k">else</span> <span class="k">if</span><span class="p">((</span><span class="nx">lion</span> <span class="o">&lt;=</span> <span class="mi">4</span><span class="p">))</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'멋사 할아버지..?'</span><span class="p">);</span>
-<span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'멋사가 아니시군요!'</span><span class="p">);</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="mi">4</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span> <span class="c1">// 다음 루프를 실행</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
+  <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="mi">7</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span> <span class="c1">// 반복문을 끝내기</span>
 <span class="p">}</span>
 </code></pre></div></div>
 
-<h3 id="switchcase문">switch/case문</h3>
+<p>i 가 4 일땐 continue 를 하여 원래 console.log 를 해야 하지만 그 코드를 수행하지 않고 바로 다음 루프인 5로 넘어갑니다.</p>
 
-<p>여러 조건에서 여러 작업을 수행할 때, switch/case문을 사용할 수도 있습니다.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">job</span> <span class="o">=</span> <span class="s1">'front-end'</span><span class="p">;</span>
-<span class="k">switch</span> <span class="p">(</span><span class="nx">job</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">case</span> <span class="s1">'front-end'</span><span class="p">:</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'프론트엔드 개발자'</span><span class="p">);</span>
-    <span class="k">break</span><span class="p">;</span>
-  <span class="k">case</span> <span class="s1">'back-end'</span><span class="p">:</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'백엔드 개발자'</span><span class="p">);</span>
-    <span class="k">break</span><span class="p">;</span>
-  <span class="k">case</span> <span class="s1">'designer'</span><span class="p">:</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'디자이너'</span><span class="p">);</span>
-    <span class="k">break</span><span class="p">;</span>
-  <span class="k">case</span> <span class="s1">'director'</span><span class="p">:</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'기획자'</span><span class="p">);</span>
-    <span class="k">break</span><span class="p">;</span>  
-  <span class="nl">default</span><span class="p">:</span>
-    <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'다른 일을 하시나봐요?'</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>switch/case 문은 이와 같이 특정 값이 무엇이냐에 따라 다른 작업을 수행 할 수 있게 해줍니다.</p>
-
-<p>switch/case 문에서는 각 <code class="highlighter-rouge">case</code> 에서 실행할 코드를 작성하고 맨 마지막에 <code class="highlighter-rouge">break;</code> 를 해주어야 합니다. break 를 하지 않으면 그 다음 case 의 코드까지 실행해버립니다.</p>
-
-<p>그리고, 맨 아래의 <code class="highlighter-rouge">default:</code> 는 job 값이 우리가 case 로 준비하지 않은 값일 경우를 의미합니다.</p>
+<p>i 가 7 일땐 break 를하여 반복문을 종료시킵니다.</p>
 
 <hr />
 
 <p>이번 교안의 내용은 여기까지입니다.</p>
 
-<p>다음 교안에서는 JavaScript의 함수에 대해 알아보겠습니다.</p>
+<p>다음 교안에서는 JavaScript의 에 대해 알아보겠습니다.</p>
 
       
     </section>
@@ -468,7 +436,7 @@
 
 
       
-        <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2019-07-05">July 05, 2019</time></p>
+        <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2019-07-14">July 14, 2019</time></p>
       
     </footer>
 
@@ -507,25 +475,24 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8+%EC%9E%85%EB%AC%B8+%EC%A0%9C+4%EA%B0%95%20http%3A%2F%2Flocalhost%3A4000%2Fjavascript%2Fjs_lecture4%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8+%EC%9E%85%EB%AC%B8+%EC%A0%9C+8%EA%B0%95%20http%3A%2F%2Flocalhost%3A4000%2Fjavascript%2Fjs_lecture8%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fjavascript%2Fjs_lecture4%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fjavascript%2Fjs_lecture8%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A4000%2Fjavascript%2Fjs_lecture4%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A4000%2Fjavascript%2Fjs_lecture8%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fjavascript%2Fjs_lecture4%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fjavascript%2Fjs_lecture8%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
     
   <nav class="pagination">
     
-      <a href="/javascript/js_lecture3/" class="pagination--pager" title="자바스크립트 입문 제 3강
+      <a href="/javascript/js_lecture7/" class="pagination--pager" title="자바스크립트 입문 제 7강
 ">이전</a>
     
     
-      <a href="/javascript/js_lecture5/" class="pagination--pager" title="자바스크립트 입문 제 5강
-">다음</a>
+      <a href="#" class="pagination--pager disabled">다음</a>
     
   </nav>
 
@@ -639,8 +606,8 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/javascript/js_lecture4/";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/javascript/js_lecture4"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "http://localhost:4000/javascript/js_lecture8/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/javascript/js_lecture8"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');
