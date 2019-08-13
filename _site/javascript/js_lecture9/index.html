@@ -9,40 +9,40 @@
   <head>
     <meta charset="utf-8">
 
-<!-- begin _includes/seo.html --><title>자바스크립트 입문 제 8강 - MJU(Seoul) x Likelion</title>
-<meta name="description" content="반복문">
+<!-- begin _includes/seo.html --><title>자바스크립트 입문 제 9강 - MJU(Seoul) x Likelion</title>
+<meta name="description" content="프로토타입과 클래스">
 
 
 
 <meta property="og:type" content="article">
 <meta property="og:locale" content="ko">
 <meta property="og:site_name" content="MJU(Seoul) x Likelion">
-<meta property="og:title" content="자바스크립트 입문 제 8강">
-<meta property="og:url" content="http://localhost:4000/javascript/js_lecture8/">
+<meta property="og:title" content="자바스크립트 입문 제 9강">
+<meta property="og:url" content="http://localhost:4000/javascript/js_lecture9/">
 
 
-  <meta property="og:description" content="반복문">
-
-
-
+  <meta property="og:description" content="프로토타입과 클래스">
 
 
 
 
-  <meta property="article:published_time" content="2019-07-14T00:00:00+09:00">
 
 
 
-  <meta property="article:modified_time" content="2019-07-14T23:00:00+09:00">
+  <meta property="article:published_time" content="2019-08-13T00:00:00+09:00">
 
 
 
-  
+  <meta property="article:modified_time" content="2019-08-13T15:00:00+09:00">
+
+
 
   
 
+  
 
-<link rel="canonical" href="http://localhost:4000/javascript/js_lecture8/">
+
+<link rel="canonical" href="http://localhost:4000/javascript/js_lecture9/">
 
 
 
@@ -278,104 +278,86 @@
 
   <div class="archive-post">
     <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
-  <meta itemprop="headline" content="자바스크립트 입문 제 8강">
-  <meta itemprop="description" content="반복문">
-  <meta itemprop="datePublished" content="July 14, 2019">
-  <meta itemprop="dateModified" content="July 14, 2019">
+  <meta itemprop="headline" content="자바스크립트 입문 제 9강">
+  <meta itemprop="description" content="프로토타입과 클래스">
+  <meta itemprop="datePublished" content="August 13, 2019">
+  <meta itemprop="dateModified" content="August 13, 2019">
 
   <div class="page__inner-wrap">
     
       <header>
-        <h1 id="page-title" class="page__title" itemprop="headline">자바스크립트 입문 제 8강
+        <h1 id="page-title" class="page__title" itemprop="headline">자바스크립트 입문 제 9강
 </h1>
         
       </header>
     
 
     <section class="page__content" itemprop="text">
-      <h2 id="반복문">반복문</h2>
+      <h2 id="프로토타입과-클래스">프로토타입과 클래스</h2>
 
-<p>특정 작업을 반복하려할 때, 우리는 반복문을 사용할 수 있습니다.</p>
+<h3 id="객체-생성자">객체 생성자</h3>
 
-<p>반복문의 종류는 아래와 같습니다.</p>
+<p>프로토타입과 클래스를 다루기 전에, 객체 생성자에 대하여 알아보겠습니다. 객체 생성자는 함수를 통해서 새로운 객체를 만들고 그 안에 넣고 싶은 값 혹은 함수들을 구현 할 수 있게 해줍니다.</p>
 
-<blockquote>
-  <ul>
-    <li>for문</li>
-    <li>while문</li>
-  </ul>
-</blockquote>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Lion</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">major</span><span class="p">,</span> <span class="nx">staff</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">major</span> <span class="o">=</span> <span class="nx">major</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">staff</span> <span class="o">=</span> <span class="nx">staff</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">lion</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="nx">staff</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"으른사자 "</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"아기사자 "</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">jeonghun</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Lion</span><span class="p">(</span><span class="s1">'반정훈'</span><span class="p">,</span> <span class="s1">'융소'</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">mansu</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Lion</span><span class="p">(</span><span class="s1">'김만수'</span><span class="p">,</span> <span class="s1">'융소'</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+
+<span class="nx">jeonghun</span><span class="p">.</span><span class="nx">lion</span><span class="p">();</span> <span class="c1">// 으른사자 반정훈</span>
+<span class="nx">mansu</span><span class="p">.</span><span class="nx">lion</span><span class="p">();</span> <span class="c1">// 아기사자 김만수</span>
+</code></pre></div></div>
+
+<p>객체 생성자를 사용 할 때는 보통 함수의 이름을 대문자로 시작하고, 새로운 객체를 만들 때에는 <code class="highlighter-rouge">new</code> 키워드를 앞에 붙여주어야 합니다.</p>
+
+<p>위의 코드에서 jeonghun과 mansu의 lion 함수는 동일한 작업을 수행함에도 불구하고 객체가 생성될 때마다 함수가 새로 생성되어 this.lion으로 설정되고 있습니다.</p>
+
+<p>같은 객체 생성자 함수를 사용하는 경우, 특정 함수 또는 값을 재사용 할 수 있는데 바로 프로토타입입니다.</p>
 
 <hr />
 
-<h3 id="for">for</h3>
+<h3 id="프로토타입">프로토타입</h3>
 
-<p>for문은 아래와 같은 구조로 이루어져 있습니다.</p>
+<p>프로토타입은 아래와 같이 객체 생성자 함수 아래에 <code class="highlighter-rouge">.prototype.[키 값] = 코드</code>를 입력하여 설정 할 수 있습니다.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="cm">/* 초기 구문; 조건 구문; 변화 구문; */</span><span class="p">)</span> <span class="p">{</span>
-  <span class="c1">// 코드</span>
-<span class="p">}</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">Lion</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">major</span><span class="p">,</span> <span class="nx">staff</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">major</span> <span class="o">=</span> <span class="nx">major</span><span class="p">;</span>
+  <span class="k">this</span><span class="p">.</span><span class="nx">staff</span> <span class="o">=</span> <span class="nx">staff</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="nx">Lion</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">lion</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">staff</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"으른사자 "</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"아기사자 "</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+    <span class="p">}</span>
+<span class="p">};</span>
+<span class="nx">Lion</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">sharedValue</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">jeonghun</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Lion</span><span class="p">(</span><span class="s1">'반정훈'</span><span class="p">,</span> <span class="s1">'융소'</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">mansu</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Lion</span><span class="p">(</span><span class="s1">'김만수'</span><span class="p">,</span> <span class="s1">'융소'</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+
+<span class="nx">jeonghun</span><span class="p">.</span><span class="nx">lion</span><span class="p">();</span> <span class="c1">// 으른사자 반정훈</span>
+<span class="nx">mansu</span><span class="p">.</span><span class="nx">lion</span><span class="p">();</span> <span class="c1">// 아기사자 김만수</span>
 </code></pre></div></div>
 
-<p>for문으로 0 부터 9까지의 정수를 출력해봅시다.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>for 문을 사용 할 때 보통 <code class="highlighter-rouge">i++</code> 를 해서 1씩 증감하는 형태로 사용합니다. <code class="highlighter-rouge">i--</code>을 통해 1씩 빼는 형태도 가능합니다.</p>
-
-<hr />
-
-<h3 id="배열과-for">배열과 for</h3>
-
-<p>배열의 여러 기능 중에서 <code class="highlighter-rouge">length</code> 값을 통해 for문에서 배열을 활용할 수도 있습니다.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">staff</span> <span class="o">=</span> <span class="p">[</span><span class="s1">'김혜현'</span><span class="p">,</span> <span class="s1">'황낙주'</span><span class="p">,</span> <span class="s1">'반정훈'</span><span class="p">,</span> <span class="s1">'한종우'</span><span class="p">];</span>
-
-<span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">staffs</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">staffs</span><span class="p">[</span><span class="nx">i</span><span class="p">]);</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<hr />
-
-<h3 id="while">while</h3>
-
-<p>while문은 특정 조건이 참이라면 계속해서 반복하는 반복문입니다. for 문은 특정 숫자를 가지고 숫자의 값을 비교하고, 증감해주면서 반복을 한다면, while문은 조건을 확인만 하면서 반복을 합니다.</p>
-
-<p>위에서 0 부터 9까지 출력하는 반복문을 while문을 통해 작성해보겠습니다.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-<span class="k">while</span> <span class="p">(</span><span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
-  <span class="nx">i</span><span class="o">++</span><span class="p">;</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<hr />
-
-<h3 id="break--continue">break &amp; continue</h3>
-
-<p>반복문 안에서는 <code class="highlighter-rouge">break</code> 와 <code class="highlighter-rouge">continue</code>를 통하여 반복문에서 벗어나거나, 그 다음 루프를 돌게끔 할 수 있습니다.</p>
-
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">for</span> <span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-  <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="mi">4</span><span class="p">)</span> <span class="k">continue</span><span class="p">;</span> <span class="c1">// 다음 루프를 실행</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">i</span><span class="p">);</span>
-  <span class="k">if</span> <span class="p">(</span><span class="nx">i</span> <span class="o">===</span> <span class="mi">7</span><span class="p">)</span> <span class="k">break</span><span class="p">;</span> <span class="c1">// 반복문을 끝내기</span>
-<span class="p">}</span>
-</code></pre></div></div>
-
-<p>i 가 4 일땐 continue 를 하여 원래 console.log 를 해야 하지만 그 코드를 수행하지 않고 바로 다음 루프인 5로 넘어갑니다.</p>
-
-<p>i 가 7 일땐 break 를하여 반복문을 종료시킵니다.</p>
+<p>…</p>
 
 <hr />
 
 <p>이번 교안의 내용은 여기까지입니다.</p>
-
-<p>다음 교안에서는 JavaScript의 프로토타입과 클래스에 대해 알아보겠습니다.</p>
 
       
     </section>
@@ -436,7 +418,7 @@
 
 
       
-        <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2019-07-14">July 14, 2019</time></p>
+        <p class="page__date"><strong><i class="fas fa-fw fa-calendar-alt" aria-hidden="true"></i> 업데이트:</strong> <time datetime="2019-08-13">August 13, 2019</time></p>
       
     </footer>
 
@@ -475,25 +457,24 @@
     <h4 class="page__share-title">공유하기</h4>
   
 
-  <a href="https://twitter.com/intent/tweet?text=%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8+%EC%9E%85%EB%AC%B8+%EC%A0%9C+8%EA%B0%95%20http%3A%2F%2Flocalhost%3A4000%2Fjavascript%2Fjs_lecture8%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
+  <a href="https://twitter.com/intent/tweet?text=%EC%9E%90%EB%B0%94%EC%8A%A4%ED%81%AC%EB%A6%BD%ED%8A%B8+%EC%9E%85%EB%AC%B8+%EC%A0%9C+9%EA%B0%95%20http%3A%2F%2Flocalhost%3A4000%2Fjavascript%2Fjs_lecture9%2F" class="btn btn--twitter" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Twitter"><i class="fab fa-fw fa-twitter" aria-hidden="true"></i><span> Twitter</span></a>
 
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fjavascript%2Fjs_lecture8%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Flocalhost%3A4000%2Fjavascript%2Fjs_lecture9%2F" class="btn btn--facebook" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Facebook"><i class="fab fa-fw fa-facebook" aria-hidden="true"></i><span> Facebook</span></a>
 
-  <a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A4000%2Fjavascript%2Fjs_lecture8%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
+  <a href="https://plus.google.com/share?url=http%3A%2F%2Flocalhost%3A4000%2Fjavascript%2Fjs_lecture9%2F" class="btn btn--google-plus" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 Google Plus"><i class="fab fa-fw fa-google-plus" aria-hidden="true"></i><span> Google+</span></a>
 
-  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fjavascript%2Fjs_lecture8%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
+  <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A%2F%2Flocalhost%3A4000%2Fjavascript%2Fjs_lecture9%2F" class="btn btn--linkedin" onclick="window.open(this.href, 'window', 'left=20,top=20,width=500,height=500,toolbar=1,resizable=0'); return false;" title="공유하기 LinkedIn"><i class="fab fa-fw fa-linkedin" aria-hidden="true"></i><span> LinkedIn</span></a>
 </section>
 
 
     
   <nav class="pagination">
     
-      <a href="/javascript/js_lecture7/" class="pagination--pager" title="자바스크립트 입문 제 7강
+      <a href="/javascript/js_lecture8/" class="pagination--pager" title="자바스크립트 입문 제 8강
 ">이전</a>
     
     
-      <a href="/javascript/js_lecture9/" class="pagination--pager" title="자바스크립트 입문 제 9강
-">다음</a>
+      <a href="#" class="pagination--pager disabled">다음</a>
     
   </nav>
 
@@ -607,8 +588,8 @@
     
   <script>
     var disqus_config = function () {
-      this.page.url = "http://localhost:4000/javascript/js_lecture8/";  // Replace PAGE_URL with your page's canonical URL variable
-      this.page.identifier = "/javascript/js_lecture8"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+      this.page.url = "http://localhost:4000/javascript/js_lecture9/";  // Replace PAGE_URL with your page's canonical URL variable
+      this.page.identifier = "/javascript/js_lecture9"; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
     };
     (function() { // DON'T EDIT BELOW THIS LINE
       var d = document, s = d.createElement('script');
