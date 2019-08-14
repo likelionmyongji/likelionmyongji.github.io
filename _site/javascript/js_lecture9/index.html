@@ -353,7 +353,45 @@
 <span class="nx">mansu</span><span class="p">.</span><span class="nx">lion</span><span class="p">();</span> <span class="c1">// 아기사자 김만수</span>
 </code></pre></div></div>
 
-<p>…</p>
+<hr />
+
+<h3 id="객체-생성자-상속-받기">객체 생성자 상속 받기</h3>
+
+<p>예를 들어서 우리가 jeonghun 과 mansu 라는 새로운 객체 생성자를 만든다고 가정해봅시다. 그리고, 해당 객체 생성자들에서 Lion 의 기능을 재사용한다고 가정해봅시다. 그렇다면, 아래처럼 구현 할 수 있습니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* 이어서 */</span>
+
+<span class="kd">function</span> <span class="nx">Staff</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">major</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">Lion</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="kc">true</span><span class="p">,</span> <span class="nx">name</span><span class="p">,</span> <span class="nx">major</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">Staff</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="nx">Lion</span><span class="p">.</span><span class="nx">prototype</span><span class="p">;</span>
+
+<span class="kd">function</span> <span class="nx">Member</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">major</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nx">Lion</span><span class="p">.</span><span class="nx">call</span><span class="p">(</span><span class="k">this</span><span class="p">,</span> <span class="kc">false</span><span class="p">,</span> <span class="nx">name</span><span class="p">,</span> <span class="nx">major</span><span class="p">);</span>
+<span class="p">}</span>
+<span class="nx">Member</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="nx">Lion</span><span class="p">.</span><span class="nx">prototype</span><span class="p">;</span>
+
+<span class="kd">const</span> <span class="nx">jeonghun</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Staff</span><span class="p">(</span><span class="s1">'반정훈'</span><span class="p">,</span> <span class="s1">'융소'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">mansu</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Member</span><span class="p">(</span><span class="s1">'김만수'</span><span class="p">,</span> <span class="s1">'융소'</span><span class="p">);</span>
+
+<span class="nx">jeonghun</span><span class="p">.</span><span class="nx">lion</span><span class="p">();</span> <span class="c1">// 으른사자 반정훈</span>
+<span class="nx">mansu</span><span class="p">.</span><span class="nx">lion</span><span class="p">();</span> <span class="c1">// 아기사자 김만수</span>
+</code></pre></div></div>
+
+<p>새로 만든 Staff 와 Member 함수에서 <code class="highlighter-rouge">Lion.call</code> 을 호출해주고 있는데요, 여기서 첫번째 인자에는 this 를 넣어주어야 하고, 그 이후에는 Lion 객체 생성자 함수에서 필요로 하는 파라미터를 넣어주어야 합니다.</p>
+
+<p>추가적으로 prototype 을 공유해야 하기 때문에 상속받은 객체 생성자 함수를 만들고 나서 prototype 값을 Lion.prototype 으로 설정해주었습니다.</p>
+
+<hr />
+
+<h3 id="클래스">클래스</h3>
+
+<p>클래스라는 기능은 C++, Java, C#, PHP 등의 다른 프로그래밍 언어에는 있는 기능인데 자바스크립트에는 없었습니다. 예전 자바스크립트 (ES5) 에서는 클래스 문법이 따로 없어 위에서 작성한 코드처럼 객체 생성자 함수를 사용하여 비슷한 작업을 구현해왔습니다.</p>
+
+<p>ES6 에서부터는 <code class="highlighter-rouge">class</code> 라는 문법이 추가되었습니다. 이는 우리가 객체 생성자로 구현했던 코드를 조금 더 명확하고, 깔끔하게 구현 할 수 있게 해줍니다. 또한, 상속도 훨씬 쉽게 해줄 수 있습니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+</code></pre></div></div>
 
 <hr />
 
@@ -383,10 +421,6 @@
       
       
       <a href="/tags/#javascript" class="page__taxonomy-item" rel="tag">JavaScript</a><span class="sep">, </span>
-    
-      
-      
-      <a href="/tags/#lecture" class="page__taxonomy-item" rel="tag">lecture</a><span class="sep">, </span>
     
       
       
