@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-14T22:38:03+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MJU(Seoul) x Likelion</title><subtitle>명지대학교(서울) 멋쟁이 사자처럼</subtitle><author><name>likelionMJU</name></author><entry><title type="html">자바스크립트 입문 제 9강</title><link href="http://localhost:4000/javascript/js_lecture9/" rel="alternate" type="text/html" title="자바스크립트 입문 제 9강" /><published>2019-08-13T00:00:00+09:00</published><updated>2019-08-13T15:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture9</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture9/">&lt;h2 id=&quot;프로토타입과-클래스&quot;&gt;프로토타입과 클래스&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2019-08-14T22:50:46+09:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">MJU(Seoul) x Likelion</title><subtitle>명지대학교(서울) 멋쟁이 사자처럼</subtitle><author><name>likelionMJU</name></author><entry><title type="html">자바스크립트 입문 제 9강</title><link href="http://localhost:4000/javascript/js_lecture9/" rel="alternate" type="text/html" title="자바스크립트 입문 제 9강" /><published>2019-08-13T00:00:00+09:00</published><updated>2019-08-13T15:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture9</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture9/">&lt;h2 id=&quot;프로토타입과-클래스&quot;&gt;프로토타입과 클래스&lt;/h2&gt;
 
 &lt;h3 id=&quot;객체-생성자&quot;&gt;객체 생성자&lt;/h3&gt;
 
@@ -148,7 +148,15 @@
 
 &lt;hr /&gt;
 
-&lt;p&gt;이번 교안의 내용은 여기까지입니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><summary type="html">프로토타입과 클래스</summary></entry><entry><title type="html">자바스크립트 입문 제 8강</title><link href="http://localhost:4000/javascript/js_lecture8/" rel="alternate" type="text/html" title="자바스크립트 입문 제 8강" /><published>2019-07-14T00:00:00+09:00</published><updated>2019-07-14T23:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture8</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture8/">&lt;h2 id=&quot;반복문&quot;&gt;반복문&lt;/h2&gt;
+&lt;p&gt;이번 교안의 내용은 여기까지입니다.&lt;/p&gt;
+
+&lt;p&gt;명지대 아기사자 여러분, 여기까지 오시느라 수고 많으셨습니다. 어느덧 준비한 &lt;code class=&quot;highlighter-rouge&quot;&gt;자바스크립트 입문&lt;/code&gt;의 교안이 모두 끝이 났습니다.&lt;/p&gt;
+
+&lt;p&gt;비록 모든 자바스크립트의 문법을 다루어 보지는 못했지만 기본기를 탄탄히 갖출 수 있도록 준비했습니다.&lt;/p&gt;
+
+&lt;p&gt;이 교안에서 멈추지 마시고 새로운 프로젝트의 시작으로 삼아 부족한 부분은 다른 사람들이 만든 프로젝트를 참고하기도 하면서 경험을 쌓아 가시길 바랍니다.&lt;/p&gt;
+
+&lt;p&gt;감사합니다.&lt;/p&gt;</content><author><name>likelionMJU</name></author><category term="JavaScript" /><category term="vanillaJS" /><category term="es6" /><summary type="html">프로토타입과 클래스</summary></entry><entry><title type="html">자바스크립트 입문 제 8강</title><link href="http://localhost:4000/javascript/js_lecture8/" rel="alternate" type="text/html" title="자바스크립트 입문 제 8강" /><published>2019-07-14T00:00:00+09:00</published><updated>2019-07-14T23:00:00+09:00</updated><id>http://localhost:4000/javascript/js_lecture8</id><content type="html" xml:base="http://localhost:4000/javascript/js_lecture8/">&lt;h2 id=&quot;반복문&quot;&gt;반복문&lt;/h2&gt;
 
 &lt;p&gt;특정 작업을 반복하려할 때, 우리는 반복문을 사용할 수 있습니다.&lt;/p&gt;
 
