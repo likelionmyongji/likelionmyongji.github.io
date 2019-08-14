@@ -304,12 +304,12 @@
   <span class="k">this</span><span class="p">.</span><span class="nx">major</span> <span class="o">=</span> <span class="nx">major</span><span class="p">;</span>
   <span class="k">this</span><span class="p">.</span><span class="nx">staff</span> <span class="o">=</span> <span class="nx">staff</span><span class="p">;</span>
   <span class="k">this</span><span class="p">.</span><span class="nx">lion</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
-    <span class="k">if</span><span class="p">(</span><span class="nx">staff</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">staff</span><span class="p">)</span> <span class="p">{</span>
       <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"으른사자 "</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
     <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
       <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"아기사자 "</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
     <span class="p">}</span>
-  <span class="p">}</span>
+  <span class="p">};</span>
 <span class="p">}</span>
 
 <span class="kd">const</span> <span class="nx">jeonghun</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Lion</span><span class="p">(</span><span class="s1">'반정훈'</span><span class="p">,</span> <span class="s1">'융소'</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
@@ -338,7 +338,7 @@
 <span class="p">};</span>
 
 <span class="nx">Lion</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">lion</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
-  <span class="k">if</span><span class="p">(</span><span class="nx">staff</span><span class="p">)</span> <span class="p">{</span>
+  <span class="k">if</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">staff</span><span class="p">)</span> <span class="p">{</span>
       <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"으른사자 "</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
     <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
       <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"아기사자 "</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
@@ -390,8 +390,56 @@
 
 <p>ES6 에서부터는 <code class="highlighter-rouge">class</code> 라는 문법이 추가되었습니다. 이는 우리가 객체 생성자로 구현했던 코드를 조금 더 명확하고, 깔끔하게 구현 할 수 있게 해줍니다. 또한, 상속도 훨씬 쉽게 해줄 수 있습니다.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">class</span> <span class="nx">Lion</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">major</span><span class="p">,</span> <span class="nx">staff</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">name</span> <span class="o">=</span> <span class="nx">name</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">major</span> <span class="o">=</span> <span class="nx">major</span><span class="p">;</span>
+    <span class="k">this</span><span class="p">.</span><span class="nx">staff</span> <span class="o">=</span> <span class="nx">staff</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nx">lion</span><span class="p">()</span> <span class="p">{</span>
+    <span class="k">if</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">staff</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"으른사자 "</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"아기사자 "</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">jeonghun</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Lion</span><span class="p">(</span><span class="s1">'반정훈'</span><span class="p">,</span> <span class="s1">'융소'</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">mansu</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Lion</span><span class="p">(</span><span class="s1">'김만수'</span><span class="p">,</span> <span class="s1">'융소'</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+
+<span class="nx">jeonghun</span><span class="p">.</span><span class="nx">lion</span><span class="p">();</span> <span class="c1">// 으른사자 반정훈</span>
+<span class="nx">mansu</span><span class="p">.</span><span class="nx">lion</span><span class="p">();</span> <span class="c1">// 아기사자 김만수</span>
 </code></pre></div></div>
+
+<p>여기서 우리가 lion 이라는 함수를 클래스 내부에 선언하였는데, 이를 ‘메서드’라고 부릅니다. 이렇게 메서드를 만들면 자동으로 prototype 으로 등록이 됩니다.</p>
+
+<hr />
+
+<p><code class="highlighter-rouge">class</code> 를 사용했을때에는, 다른 클래스를 쉽게 상속 할 수 있습니다.</p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* 이어서 */</span>
+
+<span class="kd">class</span> <span class="nx">Staff</span> <span class="kd">extends</span> <span class="nx">Lion</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">major</span><span class="p">)</span> <span class="p">{</span>
+     <span class="k">super</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">major</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">class</span> <span class="nx">Member</span> <span class="kd">extends</span> <span class="nx">Lion</span> <span class="p">{</span>
+  <span class="kd">constructor</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">major</span><span class="p">)</span> <span class="p">{</span>
+     <span class="k">super</span><span class="p">(</span><span class="nx">name</span><span class="p">,</span> <span class="nx">major</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+
+<span class="kd">const</span> <span class="nx">jeonghun</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Staff</span><span class="p">(</span><span class="s1">'반정훈'</span><span class="p">,</span> <span class="s1">'융소'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">mansu</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Member</span><span class="p">(</span><span class="s1">'김만수'</span><span class="p">,</span> <span class="s1">'융소'</span><span class="p">);</span>
+
+<span class="nx">jeonghun</span><span class="p">.</span><span class="nx">lion</span><span class="p">();</span> <span class="c1">// 으른사자 반정훈</span>
+<span class="nx">mansu</span><span class="p">.</span><span class="nx">lion</span><span class="p">();</span> <span class="c1">// 아기사자 김만수</span>
+</code></pre></div></div>
+
+<p>상속을 할 때는 <code class="highlighter-rouge">extends</code> 키워드를 사용하며, constructor에서 사용하는 <code class="highlighter-rouge">super()</code> 함수가 상속받은 클래스의 생성자를 가르킵니다.</p>
 
 <hr />
 
