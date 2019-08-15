@@ -1,6 +1,6 @@
 var store = [{
         "title": "자바스크립트 입문 제 0강",
-        "excerpt":"자바스크립트란?   JavaScripts는 웹 브라우저에서 사용하기 위해 만들어진 프로그래밍 언어입니다. 이 언어는 웹 브라우저 상에서 나타나는 UI(사용자 인터페이스)를 동적으로 보여주기 위해 사용됩니다. 최근에는 브라우저 뿐만 아니라 Node.js 런타임을 통해 서버 쪽에서도 사용되고 있습니다.   또한,  NW.js, Electron 등을 통해 데스크탑 앱을 만들 수도 있고, react-native, NativeScript 등으로 모바일 앱도 만들 수 있습니다.   JavaScript는 매년마다 새로운 문법들이 나오며 나날히 발전해 가고 있습니다. 명지대학교(서울) 멋쟁이사자처럼에서는 2학기 교육과정으로 React가 결졍됨에 따라 여름 방학 동안 7기 아기사자들이 쉽게 JavaScript를 이해할 수 있도록 교안을 정리해 올려보고자 합니다.  ","categories": ["JavaScript"],
+        "excerpt":"자바스크립트란?   JavaScripts는 웹 브라우저에서 사용하기 위해 만들어진 프로그래밍 언어입니다. 이 언어는 웹 브라우저 상에서 나타나는 UI(사용자 인터페이스)를 동적으로 보여주기 위해 사용됩니다. 최근에는 브라우저 뿐만 아니라 Node.js 런타임을 통해 서버 쪽에서도 사용되고 있습니다.   또한,  NW.js, Electron 등을 통해 데스크탑 앱을 만들 수도 있고, react-native, NativeScript 등으로 모바일 앱도 만들 수 있습니다.   JavaScript는 매년마다 새로운 문법들이 나오며 나날히 발전해 가고 있습니다. 명지대학교(서울) 멋쟁이사자처럼에서는 2학기 교육과정으로 React가 결졍됨에 따라 명지대 아기사자들이 쉽게 JavaScript를 이해할 수 있도록 교안을 정리해 올려보고자 합니다.  ","categories": ["JavaScript"],
         "tags": ["JavaScript","vanillaJS","es6"],
         "url": "http://localhost:4000/javascript/js_lecture0/",
         "teaser":null},{
