@@ -325,9 +325,9 @@
 <p>우리는 Console에서 문자열을 조합하기 위해서 아래와 같이 <code class="highlighter-rouge">+</code>문자를 사용했었습니다.</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">hello</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
-  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s1">'Hello, '</span> <span class="o">+</span> <span class="nx">name</span> <span class="o">+</span> <span class="s1">'!'</span><span class="p">);</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">'</span><span class="s1">Hello, </span><span class="dl">'</span> <span class="o">+</span> <span class="nx">name</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">!</span><span class="dl">'</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="nx">hello</span><span class="p">(</span><span class="s1">'lion'</span><span class="p">);</span>
+<span class="nx">hello</span><span class="p">(</span><span class="dl">'</span><span class="s1">lion</span><span class="dl">'</span><span class="p">);</span>
 </code></pre></div></div>
 
 <p><code class="highlighter-rouge">+</code>문자를 사용해도 좋지만 es6에서 템플릿 리터럴 문법을 사용하여 더욱 간단하게 조합할 수 있게 되었습니다.</p>
@@ -335,7 +335,7 @@
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nx">hello</span><span class="p">(</span><span class="nx">name</span><span class="p">)</span> <span class="p">{</span>
   <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">`Hello, </span><span class="p">${</span><span class="nx">name</span><span class="p">}</span><span class="s2">!`</span><span class="p">);</span>
 <span class="p">}</span>
-<span class="nx">hello</span><span class="p">(</span><span class="s1">'lion'</span><span class="p">);</span>
+<span class="nx">hello</span><span class="p">(</span><span class="dl">'</span><span class="s1">lion</span><span class="dl">'</span><span class="p">);</span>
 </code></pre></div></div>
 
 <hr />

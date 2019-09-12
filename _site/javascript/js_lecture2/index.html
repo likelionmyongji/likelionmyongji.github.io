@@ -324,7 +324,7 @@
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">lion</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">lion</span><span class="p">);</span>
-<span class="nx">lion</span> <span class="o">=</span> <span class="s1">'likelion'</span><span class="p">;</span>
+<span class="nx">lion</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">likelion</span><span class="dl">'</span><span class="p">;</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">lion</span><span class="p">);</span>
 </code></pre></div></div>
 
@@ -336,7 +336,7 @@
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// SyntaxError: Cannot declare a let variable twice: 'lion'.</span>
 <span class="kd">let</span> <span class="nx">lion</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-<span class="kd">let</span> <span class="nx">lion</span> <span class="o">=</span> <span class="s1">'likelion'</span><span class="p">;</span>
+<span class="kd">let</span> <span class="nx">lion</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">likelion</span><span class="dl">'</span><span class="p">;</span>
 </code></pre></div></div>
 
 <hr />
@@ -354,7 +354,7 @@
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// TypeError: Attempted to assign to readonly property.</span>
 <span class="kd">const</span> <span class="nx">lion</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-<span class="nx">lion</span> <span class="o">=</span> <span class="s1">'likelion'</span><span class="p">;</span>
+<span class="nx">lion</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">likelion</span><span class="dl">'</span><span class="p">;</span>
 </code></pre></div></div>
 
 <p>“Attempted to assign to readonly property.” 라는 오류가 발생했습니다. 이는 한번 상수로 선언했으면 값을 바꿀 수 없음을 의미합니다.</p>
@@ -363,7 +363,7 @@
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// SyntaxError: Cannot declare a const variable twice: 'lion'.</span>
 <span class="kd">const</span> <span class="nx">lion</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-<span class="kd">const</span> <span class="nx">lion</span> <span class="o">=</span> <span class="s1">'likelion'</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">lion</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">likelion</span><span class="dl">'</span><span class="p">;</span>
 </code></pre></div></div>
 
 <hr />
@@ -396,7 +396,7 @@
 
 <p><strong>문자열</strong>은 작은따옴표(‘’) 또는 큰따옴표(““)로 감싸서 선언합니다.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">myongji</span> <span class="o">=</span> <span class="s1">'띵지'</span><span class="p">;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">let</span> <span class="nx">myongji</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">띵지</span><span class="dl">'</span><span class="p">;</span>
 </code></pre></div></div>
 
 <p><strong>Boolean</strong>은 Python에서 다루었듯이 참 혹은 거짓 두가지 종류의 값만을 나타낼 수 있습니다.</p>
@@ -405,7 +405,7 @@
 <span class="kd">let</span> <span class="nx">sleep</span> <span class="o">=</span> <span class="kc">false</span><span class="p">;</span>
 </code></pre></div></div>
 
-<p>여기서 참은 trus, 거짓은 false입니다.</p>
+<p>여기서 참은 true, 거짓은 false입니다.</p>
 
 <p><strong>null</strong>과 <strong>undefinded</strong>는 JavaScript에서 ‘없음’을 나타냅니다.</p>
 

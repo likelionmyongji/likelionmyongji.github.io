@@ -432,8 +432,8 @@
 <p><code class="highlighter-rouge">===</code>는 두 값이 일치하고, 타입도 같은지 검사합니다.</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-<span class="kd">const</span> <span class="nx">b</span> <span class="o">=</span> <span class="s1">'1'</span><span class="p">;</span>
-<span class="kd">const</span> <span class="nx">c</span> <span class="o">=</span> <span class="s1">'1'</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">b</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">c</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">;</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span> <span class="o">===</span> <span class="nx">b</span><span class="p">);</span> <span class="c1">// false</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">b</span> <span class="o">===</span> <span class="nx">c</span><span class="p">);</span> <span class="c1">// true</span>
 </code></pre></div></div>
@@ -441,8 +441,8 @@
 <p><code class="highlighter-rouge">==</code>은 두 값이 같은지 비교하지만 타입 검사는 하지 않습니다.</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-<span class="kd">const</span> <span class="nx">b</span> <span class="o">=</span> <span class="s1">'1'</span><span class="p">;</span>
-<span class="kd">const</span> <span class="nx">c</span> <span class="o">=</span> <span class="s1">'1'</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">b</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">c</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">;</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span> <span class="o">==</span> <span class="nx">b</span><span class="p">);</span> <span class="c1">// true</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">b</span> <span class="o">==</span> <span class="nx">c</span><span class="p">);</span> <span class="c1">// true</span>
 </code></pre></div></div>
@@ -452,8 +452,8 @@
 <p>두 값이 일치하지 않는지 확인할 때에도 위와 비슷하게 <code class="highlighter-rouge">!==</code>를 사용하면 됩니다.</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-<span class="kd">const</span> <span class="nx">b</span> <span class="o">=</span> <span class="s1">'1'</span><span class="p">;</span>
-<span class="kd">const</span> <span class="nx">c</span> <span class="o">=</span> <span class="s1">'2'</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">b</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">c</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">2</span><span class="dl">'</span><span class="p">;</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span> <span class="o">!==</span> <span class="nx">b</span><span class="p">);</span> <span class="c1">// true</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">b</span> <span class="o">!==</span> <span class="nx">c</span><span class="p">);</span> <span class="c1">// true</span>
 </code></pre></div></div>
@@ -461,8 +461,8 @@
 <p>마찬가지로 <code class="highlighter-rouge">!=</code>를 사용하면 타입 겁사를 하지 않습니다.</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-<span class="kd">const</span> <span class="nx">b</span> <span class="o">=</span> <span class="s1">'1'</span><span class="p">;</span>
-<span class="kd">const</span> <span class="nx">c</span> <span class="o">=</span> <span class="s1">'2'</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">b</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">1</span><span class="dl">'</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">c</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">2</span><span class="dl">'</span><span class="p">;</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span> <span class="o">!=</span> <span class="nx">b</span><span class="p">);</span> <span class="c1">// false</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">b</span> <span class="o">!=</span> <span class="nx">c</span><span class="p">);</span> <span class="c1">// true</span>
 </code></pre></div></div>
@@ -490,7 +490,7 @@
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// 이것은 주석입니다.</span>
 </code></pre></div></div>
 
-<p>주석은 여러 줄로도 작성할 수 있습니다,</p>
+<p>주석은 여러 줄로도 작성할 수 있습니다.</p>
 
 <div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="cm">/* 
     이것은 여러 줄 주석입니다.
@@ -503,8 +503,8 @@
 
 <p>단순히 두 문자열을 붙일 때에는 <code class="highlighter-rouge">+</code>을 사용합니다.</p>
 
-<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">like</span> <span class="o">=</span> <span class="s1">'멋쟁이'</span><span class="p">;</span>
-<span class="kd">const</span> <span class="nx">lion</span> <span class="o">=</span> <span class="s1">'사자처럼'</span><span class="p">;</span>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">like</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">멋쟁이</span><span class="dl">'</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">lion</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">사자처럼</span><span class="dl">'</span><span class="p">;</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">like</span> <span class="o">+</span> <span class="nx">lion</span><span class="p">);</span> <span class="c1">// 멋쟁이사자처럼</span>
 </code></pre></div></div>
 

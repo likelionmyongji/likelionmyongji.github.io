@@ -305,15 +305,15 @@
   <span class="k">this</span><span class="p">.</span><span class="nx">staff</span> <span class="o">=</span> <span class="nx">staff</span><span class="p">;</span>
   <span class="k">this</span><span class="p">.</span><span class="nx">lion</span> <span class="o">=</span> <span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
     <span class="k">if</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">staff</span><span class="p">)</span> <span class="p">{</span>
-      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"으른사자 "</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">으른사자 </span><span class="dl">"</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
     <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"아기사자 "</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">아기사자 </span><span class="dl">"</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
     <span class="p">}</span>
   <span class="p">};</span>
 <span class="p">}</span>
 
-<span class="kd">const</span> <span class="nx">jeonghun</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Lion</span><span class="p">(</span><span class="s1">'반정훈'</span><span class="p">,</span> <span class="s1">'융소'</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
-<span class="kd">const</span> <span class="nx">mansu</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Lion</span><span class="p">(</span><span class="s1">'김만수'</span><span class="p">,</span> <span class="s1">'융소'</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">jeonghun</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Lion</span><span class="p">(</span><span class="dl">'</span><span class="s1">반정훈</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">융소</span><span class="dl">'</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">mansu</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Lion</span><span class="p">(</span><span class="dl">'</span><span class="s1">김만수</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">융소</span><span class="dl">'</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
 
 <span class="nx">jeonghun</span><span class="p">.</span><span class="nx">lion</span><span class="p">();</span> <span class="c1">// 으른사자 반정훈</span>
 <span class="nx">mansu</span><span class="p">.</span><span class="nx">lion</span><span class="p">();</span> <span class="c1">// 아기사자 김만수</span>
@@ -339,15 +339,15 @@
 
 <span class="nx">Lion</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">lion</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(){</span>
   <span class="k">if</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">staff</span><span class="p">)</span> <span class="p">{</span>
-      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"으른사자 "</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">으른사자 </span><span class="dl">"</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
     <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"아기사자 "</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">아기사자 </span><span class="dl">"</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
     <span class="p">}</span>
 <span class="p">};</span>
 <span class="nx">Lion</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">sharedValue</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
 
-<span class="kd">const</span> <span class="nx">jeonghun</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Lion</span><span class="p">(</span><span class="s1">'반정훈'</span><span class="p">,</span> <span class="s1">'융소'</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
-<span class="kd">const</span> <span class="nx">mansu</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Lion</span><span class="p">(</span><span class="s1">'김만수'</span><span class="p">,</span> <span class="s1">'융소'</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">jeonghun</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Lion</span><span class="p">(</span><span class="dl">'</span><span class="s1">반정훈</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">융소</span><span class="dl">'</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">mansu</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Lion</span><span class="p">(</span><span class="dl">'</span><span class="s1">김만수</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">융소</span><span class="dl">'</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
 
 <span class="nx">jeonghun</span><span class="p">.</span><span class="nx">lion</span><span class="p">();</span> <span class="c1">// 으른사자 반정훈</span>
 <span class="nx">mansu</span><span class="p">.</span><span class="nx">lion</span><span class="p">();</span> <span class="c1">// 아기사자 김만수</span>
@@ -371,8 +371,8 @@
 <span class="p">}</span>
 <span class="nx">Member</span><span class="p">.</span><span class="nx">prototype</span> <span class="o">=</span> <span class="nx">Lion</span><span class="p">.</span><span class="nx">prototype</span><span class="p">;</span>
 
-<span class="kd">const</span> <span class="nx">jeonghun</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Staff</span><span class="p">(</span><span class="s1">'반정훈'</span><span class="p">,</span> <span class="s1">'융소'</span><span class="p">);</span>
-<span class="kd">const</span> <span class="nx">mansu</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Member</span><span class="p">(</span><span class="s1">'김만수'</span><span class="p">,</span> <span class="s1">'융소'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">jeonghun</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Staff</span><span class="p">(</span><span class="dl">'</span><span class="s1">반정훈</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">융소</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">mansu</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Member</span><span class="p">(</span><span class="dl">'</span><span class="s1">김만수</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">융소</span><span class="dl">'</span><span class="p">);</span>
 
 <span class="nx">jeonghun</span><span class="p">.</span><span class="nx">lion</span><span class="p">();</span> <span class="c1">// 으른사자 반정훈</span>
 <span class="nx">mansu</span><span class="p">.</span><span class="nx">lion</span><span class="p">();</span> <span class="c1">// 아기사자 김만수</span>
@@ -398,15 +398,15 @@
   <span class="p">}</span>
   <span class="nx">lion</span><span class="p">()</span> <span class="p">{</span>
     <span class="k">if</span><span class="p">(</span><span class="k">this</span><span class="p">.</span><span class="nx">staff</span><span class="p">)</span> <span class="p">{</span>
-      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"으른사자 "</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">으른사자 </span><span class="dl">"</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
     <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="s2">"아기사자 "</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
+      <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">아기사자 </span><span class="dl">"</span> <span class="o">+</span> <span class="k">this</span><span class="p">.</span><span class="nx">name</span><span class="p">);</span>
     <span class="p">}</span>
   <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="kd">const</span> <span class="nx">jeonghun</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Lion</span><span class="p">(</span><span class="s1">'반정훈'</span><span class="p">,</span> <span class="s1">'융소'</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
-<span class="kd">const</span> <span class="nx">mansu</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Lion</span><span class="p">(</span><span class="s1">'김만수'</span><span class="p">,</span> <span class="s1">'융소'</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">jeonghun</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Lion</span><span class="p">(</span><span class="dl">'</span><span class="s1">반정훈</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">융소</span><span class="dl">'</span><span class="p">,</span> <span class="kc">true</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">mansu</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Lion</span><span class="p">(</span><span class="dl">'</span><span class="s1">김만수</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">융소</span><span class="dl">'</span><span class="p">,</span> <span class="kc">false</span><span class="p">);</span>
 
 <span class="nx">jeonghun</span><span class="p">.</span><span class="nx">lion</span><span class="p">();</span> <span class="c1">// 으른사자 반정훈</span>
 <span class="nx">mansu</span><span class="p">.</span><span class="nx">lion</span><span class="p">();</span> <span class="c1">// 아기사자 김만수</span>
@@ -432,8 +432,8 @@
   <span class="p">}</span>
 <span class="p">}</span>
 
-<span class="kd">const</span> <span class="nx">jeonghun</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Staff</span><span class="p">(</span><span class="s1">'반정훈'</span><span class="p">,</span> <span class="s1">'융소'</span><span class="p">);</span>
-<span class="kd">const</span> <span class="nx">mansu</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Member</span><span class="p">(</span><span class="s1">'김만수'</span><span class="p">,</span> <span class="s1">'융소'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">jeonghun</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Staff</span><span class="p">(</span><span class="dl">'</span><span class="s1">반정훈</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">융소</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">const</span> <span class="nx">mansu</span> <span class="o">=</span> <span class="k">new</span> <span class="nx">Member</span><span class="p">(</span><span class="dl">'</span><span class="s1">김만수</span><span class="dl">'</span><span class="p">,</span> <span class="dl">'</span><span class="s1">융소</span><span class="dl">'</span><span class="p">);</span>
 
 <span class="nx">jeonghun</span><span class="p">.</span><span class="nx">lion</span><span class="p">();</span> <span class="c1">// 으른사자 반정훈</span>
 <span class="nx">mansu</span><span class="p">.</span><span class="nx">lion</span><span class="p">();</span> <span class="c1">// 아기사자 김만수</span>
