@@ -7,6 +7,6 @@ MJU(Seoul) x Likelion GitHub Page
 
 ---
 
-GitHub Page for manage programming club; MJU(Seoul) x Likelion
+GitHub Page for manage programming club; [likelionMJU](https://github.com/likelionmju)
 
 [Demo] [https://likelionmyongji.github.io](https://likelionmyongji.github.io)
